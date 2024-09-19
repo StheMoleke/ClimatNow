@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimatNow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    </header>
+
+    <div class="container">
+        <img src="climatnow-app-logo.png" alt="App Logo" id="app-logo">
+        <h1>ClimatNow</h1>
+        <input type="text" id="city-input" placeholder="Enter City Name">
+        <button id="search-button">Get Weather</button>
+        <button id="location-button">Use My Location</button>
+
+        <div class="weather-info" id="weather-info">
+            <h2 id="city-name"></h2>
+            <img id="weather-icon" src="" alt="Weather Icon" style="display: none;">
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+            <p id="wind-compass" src="compass.png" alt="Wind Direction">
+        </div>
+
+        <!-- Hourly Forecast -->
+        <div id="hourly-forecast" class="forecast-container">
+            <h3>Hourly Forecast</h3>
+        </div>
+
+        <!-- 7-Day Forecast -->
+        <div id="forecast-container" class="forecast-container">
+            <h3>7-Day Forecast</h3>
+        </div>
+
+        <!-- Air Quality Index -->
+        <p id="aqi"></p>
+
+        <!-- Weather Alerts -->
+        <div id="alerts"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

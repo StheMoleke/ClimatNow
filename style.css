@@ -1,0 +1,152 @@
+/* Ensure the page uses full height and centers everything */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the container and allow for scrollable content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #5852a742;
+    padding-top: 20px;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 90%; /* Set max width to 90% to ensure better fit on mobile */
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Input and buttons - adjusted for mobile */
+input {
+    padding: 12px;
+    font-size: 1rem; /* Use rem units for scaling on mobile */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%; /* Make input full width on mobile */
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 12px 15px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make buttons full width on mobile */
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info p {
+    margin: 5px 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.75rem; /* Adjust font size for mobile */
+}
+
+/* Weather Icon Styling */
+img {
+    margin-top: 10px;
+}
+
+#wind-compass {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+/* Forecast Container - Adjust for mobile */
+.forecast-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.forecast-item, .hourly-item {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100px;
+}
+
+.forecast-item h4, .hourly-item h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+#alerts {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.alert-item {
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#aqi {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Logo Styling */
+#app-logo {
+    width: 80px; /* Adjust width for smaller devices */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/* Media Query for Small Devices (like Android) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .forecast-item, .hourly-item {
+        width: 80px; /* Make forecast items smaller for small screens */
+    }
+
+    button, input {
+        font-size: 0.875rem; /* Adjust input and button text size */
+    }
+
+    #app-logo {
+        width: 60px; /* Make the logo smaller on very small screens */
+    }
+}
+
+
+
